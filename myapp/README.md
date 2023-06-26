@@ -1,6 +1,6 @@
 # React and Redux
 
-If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
+If you are not familiar with linters and GitHub Actions,read [root level README](../README.md).
 
 ## Set-up GitHub Actions
 
