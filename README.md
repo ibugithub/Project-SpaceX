@@ -1,65 +1,174 @@
-# React and Redux
+# React & Redux group project - Space Travelers' Hub
+<br>
+<div align='center'>
+	<h1>Bookstore</h1>
+  </div>
+<a name="readme-top"></a>
 
-If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
+# 📗 Table of Contents
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-## Set-up GitHub Actions
 
-This GitHub Action is going to run [ESLint](https://eslint.org/) and [Stylelint](https://stylelint.io/) to help you find style issues.
+# 📖 Bookstore! <a name="about-project"></a>
 
-[Stylelint](https://stylelint.io/) is a linter for your stylesheets that helps you avoid errors and enforce conventions.
+**Bookstore!**  we are building a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+## 🛠 Built With <a name="built-with"></a>
 
-[ESLint](https://eslint.org/) is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+### Tech Stack <a name="tech-stack"></a>
 
-Please do the following **steps in this order**:
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">HTML</></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">JavaScript</a></li>
+	<li><a href="https://react.dev/learn/react-developer-tools">React</a></li>
+  <li><a href="https://redux-toolkit.js.org/">Redux</a></li>
+  <li><a href="https://api.spacexdata.com/v3/missions">API</a></li>
+  </ul>
+</details>
 
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-    - **Remember** to use the file linked above
-    - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub Actions:
+### Key Features <a name="key-features"></a>
 
-![gh actions checks](../assets/images/gh-actions-eslint-stylelint-checks.png)
+- **A project to learn how to use react**
 
-Click on the `Details` link to see the full output and the errors that need to be fixed:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-![gh actions failing checks](../assets/images/gh-actions-html-css-failing-checks.png)
+<!-- LIVE DEMO -->
 
-## Set-up linters in your local env
+## 🚀 Live Demo <a name="live-demo"></a>
 
-### ESLint
+**The live demo will be updated as soon as the page is displayed**
 
-1. Run 
-    ```
-    npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x  @babel/preset-react@7.x @babel/preset-react@7.x
-    ```
-    *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
-2. Copy [.eslintrc.json](./.eslintrc.json) and [.babelrc](./.babelrc) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx eslint "**/*.{js,jsx}"` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Eslint](https://eslint.org/docs/latest/user-guide/command-line-interface#fixing-problems) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Stylelint
+<!-- GETTING STARTED -->
 
-1. Run
+## 💻 Getting Started <a name="getting-started"></a>
 
-   ```
-   npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-   ```
+- Step 1: Clone this project using this git comand "git clone", (if you don't have git installed please visit
+  https://git-scm.com/downloads and install it).
+- Step 2: Once you have installed git you can clone this project using the command below:
+  ```
+  https://github.com/ibugithub/Project-SpaceX
+  ```
+- Step 3: Once you have cloned this repo navigate to the folder that contains
+  the repository.
+- Step 4: If you want to watch the html file open it with your favorite web browser(This project MUST be opened from VS Code for full functionality).
+- Step 5: If you want to edit this project open it with your favorite text editor.
 
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-2. Copy [.stylelintrc.json](./.stylelintrc.json) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/usage/options) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+## 💻 Getting Started <a name="getting-started"></a>
 
-## Test/Deployment Actions
+To get a local copy up and running cloning this repo `https://github.com/ibugithub/Project-SpaceX`.
 
-Feel free to add your own deployment actions which can run your tests and deploy to Heroku.
+### Prerequisites
 
-Make sure that you do not modify the [`.github/workflows/linters.yml`](.github/workflows/linters.yml) but that you create a separe GitHub Action workflow file for that.
+There are no known prerequisites to run this project.
+If you encounter any issues trying to run it, please feel free to
+[open a ticket](https://github.com/ibugithub/Project-SpaceX/issues/25) to let me know and i will work on it to the best
+of my abilities
+
+### Setup
+
+Clone this repository to your desired folder:
+
+`https://github.com/ibugithub/Project-SpaceX`
+
+or
+
+`https://github.com/ibugithub/Project-SpaceX` <-- _Only if you have [SSH keys configured](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) on your GitHub account_.
+
+### Usage
+
+To run the project:
+
+- Method 1:
+
+```sh
+  cd PATH_TO_CLONE
+  npm install
+  npm run build
+  npm start
+```
+
+Method 2:
+Open './dist/index.html' in your browser of choice
+
+### Deployment
+
+You can deploy this project using [github pages](https://docs.github.com/en/pages/quickstart)
+or a web-hosting platform of your choice.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+> 👤 **Gardimy Charles**
+- GitHub: [@Gardimy](https://github.com/Gardimy)
+- Twitter: [@gardyelontiga45](https://twitter.com/gardyelontiga45)
+- LinkedIn: [Gardimy charles](https://www.linkedin.com/in/gardimy-charles)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- Use store, actions and reducers in React.
+- Connect React and Redux.
+- Update Circle percent when a user add a book
+
+- [ ] **Updates will be made shortly to make the page interactive**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/ibugithub/Project-SpaceX/issues/25).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project please give me a start and share my portfolio to recruters!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank to the Microverse team for teching me this tool.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
