@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import axios from 'axios';
 import { storeMissions } from '../redux/missions/MissionSlice';
+import '../styles/Mission.css';
 
 function Missions() {
   const dispatch = useDispatch();
@@ -24,6 +25,7 @@ function Missions() {
               <th>Mission</th>
               <th>Description</th>
               <th>Status</th>
+              <th>.</th>
             </tr>
           </thead>
           <tbody>
@@ -31,7 +33,8 @@ function Missions() {
               <tr key={mission.mission_id}>
                 <td>{mission.mission_name}</td>
                 <td>{mission.description}</td>
-                <button type="button">Not a Member</button>
+                <td><button type="button">Not a Member</button></td>
+                <td><button type="button">Join Mission</button></td>
               </tr>
             ))}
           </tbody>
