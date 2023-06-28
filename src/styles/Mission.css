@@ -49,11 +49,13 @@
   }
 
   .not-member-btn {
-    padding: 5px 20px;
+    padding: 1px 12px;
     background-color: grey;
+    color: white;
     cursor: pointer;
     white-space: nowrap;
     border: none;
+    border-style: ridge;
   }
   
   

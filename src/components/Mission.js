@@ -32,7 +32,7 @@ function Missions() {
               <tr key={mission.mission_id}>
                 <td className="name">{mission.mission_name}</td>
                 <td>{mission.description}</td>
-                <td className="btn"><button className="not-member-btn" type="button">Not a Member</button></td>
+                <td className="btn"><button className="not-member-btn" type="button">NOT A MEMBER</button></td>
                 <td><button type="button">Join Mission</button></td>
               </tr>
             ))}
