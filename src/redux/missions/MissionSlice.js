@@ -1,12 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const missionSlice = createSlice({
-  name: 'rockets',
+  name: 'missions',
   initialState: [],
   reducers: {
-    // actions and reducers
+    storeMissions: (state, action) => action.payload,
+    // other actions...
   },
 });
 
-export const { actions, reducer } = missionSlice;
-export default missionSlice.reducer;
+const { reducer: missionReducer, actions: { storeMissions } } = missionSlice;
+
+export { storeMissions };
+export default missionReducer;

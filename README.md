@@ -1,3 +1,4 @@
+
 # Project Space
 <br>
 <div align='center'>
@@ -23,6 +24,7 @@
 # 📖 Space Travelers' Hub! <a name="about-project"></a>
 
 **BSpace Travelers' Hub!**  we are building a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -33,9 +35,9 @@
     <li><a href="https://www.w3schools.com/html/">HTML</></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
     <li><a href="https://www.w3schools.com/js/default.asp">JavaScript</a></li>
-	<li><a href="https://react.dev/learn/react-developer-tools">React</a></li>
-  <li><a href="https://redux-toolkit.js.org/">Redux</a></li>
-  <li><a href="https://api.spacexdata.com/v3/missions">API</a></li>
+	  <li><a href="https://react.dev/learn/react-developer-tools">React</a></li>
+    <li><a href="https://redux-toolkit.js.org/">Redux</a></li>
+    <li><a href="https://api.spacexdata.com/v3/missions">API</a></li>
   </ul>
 </details>
 
@@ -127,7 +129,6 @@ or a web-hosting platform of your choice.
 - GitHub: [Ibu's Github](https://github.com/ibugithub)
 - Twitter: [Ibu's Twitter](https://twitter.com/mdibrahimibuu)
 - LinkedIn [Ibu's LinkedIn](https://linkedin.com/in/ibuu)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
