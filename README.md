@@ -41,10 +41,6 @@
   </ul>
 </details>
 
-### Key Features <a name="key-features"></a>
-
-- **A project to learn how to use react**
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
