@@ -1,21 +1,57 @@
-.NavBarContainer {
-  width: 100%;
-  display: flex;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.Navbar {
-  display: flex;
-  gap: 50px;
-  margin-left: 3%;
-  align-items: center;
-  text-decoration: none;
+li {
   list-style: none;
 }
 
 li a {
-  text-decoration: none;
-  list-style: none;
-  color: rgb(0, 110, 255);
+  text-decoration: unset;
+}
+
+.logo {
+  height: 35px;
+  padding-right: 5px;
+}
+
+.dFlx {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.logo_title_container {
+  display: flex;
+  align-items: center;
+}
+
+.NavBar_ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: unset;
+  gap: 18px;
+}
+
+.NavBar_ul li a {
+  font-size: 13px;
+  color: #1193ec;
+}
+
+.fontW400 {
+  font-weight: 400;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.profileLi {
+  display: flex;
+  align-items: center;
+}
+
+.spearator {
+  height: 12px;
+  width: 2px;
+  background-color: #938c8c;
+  margin-right: 15px;
 }
