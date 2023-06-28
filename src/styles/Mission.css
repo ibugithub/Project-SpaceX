@@ -60,7 +60,6 @@ td button .btn {
   border-style: ridge;
 }
 
-
 td button:not(:last-child) {
   margin-right: 5px;
 }
