@@ -1,5 +1,6 @@
 li {
   list-style: none;
+  margin-bottom: 25px;
 }
 
 li a {
@@ -11,11 +12,14 @@ li a {
   padding-right: 5px;
 }
 
-.dFlx {
+#nav {
   display: flex;
-  justify-content: space-between;
   padding-right: 30px;
   padding-left: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .logo_title_container {
@@ -54,4 +58,64 @@ li a {
   width: 2px;
   background-color: #938c8c;
   margin-right: 15px;
+}
+
+.desktopShow {
+  display: none;
+}
+
+#menu-img {
+  width: 30px;
+}
+
+button {
+  border: unset;
+  background-color: #397aef;
+  width: 120px;
+  padding: 10px;
+  color: white;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+#menuImg {
+  border: unset;
+  width: auto;
+  background: transparent;
+}
+
+.toggledNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.margin0 {
+  margin: unset;
+}
+
+.alignTop {
+  align-items: flex-start !important;
+}
+
+@media (min-width: 510px) {
+  .desktopShow {
+    display: flex;
+  }
+
+  .mobileShow {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .rocket-images {
+    width: 150px !important;
+    height: 100px !important;
+  }
+
+  #rocket-info p {
+    max-height: 100px !important;
+  }
 }
