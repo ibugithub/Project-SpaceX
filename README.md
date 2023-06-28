@@ -1,7 +1,8 @@
-# React & Redux group project - Space Travelers' Hub
+
+# Project Space
 <br>
 <div align='center'>
-	<h1>Bookstore</h1>
+	<h1>Space Travelers' Hub</h1>
   </div>
 <a name="readme-top"></a>
 
@@ -20,9 +21,10 @@
 - [📝 License](#license)
 
 
-# 📖 Bookstore! <a name="about-project"></a>
+# 📖 Space Travelers' Hub! <a name="about-project"></a>
 
-**Bookstore!**  we are building a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+**BSpace Travelers' Hub!**  we are building a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -30,12 +32,12 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">HTML</></li>
+    <li><a href="https://www.w3schools.com/html/">HTML</></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">JavaScript</a></li>
-	<li><a href="https://react.dev/learn/react-developer-tools">React</a></li>
-  <li><a href="https://redux-toolkit.js.org/">Redux</a></li>
-  <li><a href="https://api.spacexdata.com/v3/missions">API</a></li>
+    <li><a href="https://www.w3schools.com/js/default.asp">JavaScript</a></li>
+	  <li><a href="https://react.dev/learn/react-developer-tools">React</a></li>
+    <li><a href="https://redux-toolkit.js.org/">Redux</a></li>
+    <li><a href="https://api.spacexdata.com/v3/missions">API</a></li>
   </ul>
 </details>
 
@@ -47,9 +49,9 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 You can check the Live Demo here<a name="live-demo"></a>
 
-**The live demo will be updated as soon as the page is displayed**
+[Live SpaceX](https://space-travelers-hub-xahs.onrender.com) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -57,7 +59,7 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-- Step 1: Clone this project using this git comand "git clone", (if you don't have git installed please visit
+- Step 1: Clone this project using this git command "git clone", (if you don't have git installed please visit
   https://git-scm.com/downloads and install it).
 - Step 2: Once you have installed git you can clone this project using the command below:
   ```
@@ -65,20 +67,20 @@
   ```
 - Step 3: Once you have cloned this repo navigate to the folder that contains
   the repository.
-- Step 4: If you want to watch the html file open it with your favorite web browser(This project MUST be opened from VS Code for full functionality).
+- Step 4: If you want to watch the HTML file open it with your favorite web browser(This project MUST be opened from VS Code for full functionality).
 - Step 5: If you want to edit this project open it with your favorite text editor.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running cloning this repo `https://github.com/ibugithub/Project-SpaceX`.
+To get a local copy up and running clone this repo `https://github.com/ibugithub/Project-SpaceX`.
 
 ### Prerequisites
 
 There are no known prerequisites to run this project.
 If you encounter any issues trying to run it, please feel free to
-[open a ticket](https://github.com/ibugithub/Project-SpaceX/issues/25) to let me know and i will work on it to the best
+[open a ticket](https://github.com/ibugithub/Project-SpaceX/issues/25) to let me know and I will work on it to the best
 of my abilities
 
 ### Setup
@@ -109,7 +111,7 @@ Open './dist/index.html' in your browser of choice
 
 ### Deployment
 
-You can deploy this project using [github pages](https://docs.github.com/en/pages/quickstart)
+You can deploy this project using [Render](https://dashboard.render.com/)
 or a web-hosting platform of your choice.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -123,15 +125,25 @@ or a web-hosting platform of your choice.
 - Twitter: [@gardyelontiga45](https://twitter.com/gardyelontiga45)
 - LinkedIn: [Gardimy charles](https://www.linkedin.com/in/gardimy-charles)
 
+ **Ibrahim ibu**
+- GitHub: [Ibu's Github](https://github.com/ibugithub)
+- Twitter: [Ibu's Twitter](https://twitter.com/mdibrahimibuu)
+- LinkedIn [Ibu's LinkedIn](https://linkedin.com/in/ibuu)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Use store, actions and reducers in React.
+- Use store, actions, and reducers in React.
 - Connect React and Redux.
-- Update Circle percent when a user add a book
+- Redux: Fetch data and update the Redux store
+- Render UI:lists
+- Redux: Write actions and reducers for booking rockets/missions
+- Redux: Write actions and reducers for canceling rockets
+- Render UI: conditional components rendering
+- Render UI: My Profile section
 
 - [ ] **Updates will be made shortly to make the page interactive**
 
@@ -151,7 +163,7 @@ Feel free to check the [issues page](https://github.com/ibugithub/Project-SpaceX
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please give me a start and share my portfolio to recruters!
+If you like this project please give me a start and share my portfolio with reporters!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -159,7 +171,7 @@ If you like this project please give me a start and share my portfolio to recrut
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank to the Microverse team for teching me this tool.
+I would like to thank to the Microverse team for teaching me this tool.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
