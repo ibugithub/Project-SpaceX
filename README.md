@@ -94,16 +94,16 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
  **Ibrahim ibu**
-- GitHub: [@githubhandle](https://github.com/ibugithub)
-- Twitter: [@twitterhandle](https://twitter.com/mdibrahimibuu)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/ibuu)
+- GitHub: [Ibu's Github](https://github.com/ibugithub)
+- Twitter: [Ibu's Twitter](https://twitter.com/mdibrahimibuu)
+- LinkedIn: [Ibu's LinkedIn](https://linkedin.com/in/ibuu)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
  **Gardimy Charles**
-- GitHub: [@githubhandle](https://github.com/Gardimy)
-- Twitter: [@twitterhandle](https://twitter.com/gardyelontiga45)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/gardimy-charles-40b795212/)
+- GitHub: [Gardimy's github](https://github.com/Gardimy)
+- Twitter: [Gardimy's twitter](https://twitter.com/gardyelontiga45)
+- LinkedIn: [Gardimy's LinkedIn](https://www.linkedin.com/in/gardimy-charles-40b795212/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
