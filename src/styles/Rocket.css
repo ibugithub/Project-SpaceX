@@ -1,0 +1,22 @@
+#rocket-container {
+  display: flex;
+  gap: 20px;
+  padding-right: 30px;
+}
+
+.rocket-images {
+  width: 200px;
+  height: 150px;
+}
+
+#rocket-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#rocket-info p {
+  max-height: 150px;
+  overflow: auto;
+  margin: unset;
+  margin-top: 10px;
+}
