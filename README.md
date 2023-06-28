@@ -47,9 +47,9 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 You can check the Live Demo here<a name="live-demo"></a>
 
-[Live](https://space-travelers-hub-xahs.onrender.com) 
+[Live SpaceX](https://space-travelers-hub-xahs.onrender.com) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
