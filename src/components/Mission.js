@@ -17,6 +17,7 @@ function Missions() {
 
   return (
     <div className="tablecontainer">
+      <hr className="line" />
       <div className="tablechild">
         <table>
           <thead>
