@@ -1,22 +1,17 @@
-<div align="center">
-  <h1> Book Store | README </h1>
-  <br/>
-</div>
+# React & Redux group project - Space Travelers' Hub
+<br>
+<div align='center'>
+	<h1>Bookstore</h1>
+  </div>
 <a name="readme-top"></a>
 
 # 📗 Table of Contents
-
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -25,124 +20,155 @@
 - [📝 License](#license)
 
 
-# Book Store  <a name="about-project"></a>
-**Book Store** is a project the 1st project of the 3rd modules. I have implemented the knowledge of react to ceate this project.
+# 📖 Space Travelers' Hub! <a name="about-project"></a>
 
+**BSpace Travelers' Hub!**  we are building a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 ## 🛠 Built With <a name="built-with"></a>
+
 ### Tech Stack <a name="tech-stack"></a>
+
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">HTML</a></li>
-    <li><a href="https://reactjs.org/">CSS</a></li>
-    <li><a href="https://reactjs.org/">JavaScript</a></li>
-    <li><a href="https://reactjs.org/">React</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">HTML</></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">JavaScript</a></li>
+	<li><a href="https://react.dev/learn/react-developer-tools">React</a></li>
+  <li><a href="https://redux-toolkit.js.org/">Redux</a></li>
+  <li><a href="https://api.spacexdata.com/v3/missions">API</a></li>
   </ul>
 </details>
 
-
 ### Key Features <a name="key-features"></a>
-- **To Display my projects**
+
+- **A project to learn how to use react**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+[Live](https://space-travelers-hub-xahs.onrender.com) 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-To get a local copy up and running, follow these steps.
+
+- Step 1: Clone this project using this git comand "git clone", (if you don't have git installed please visit
+  https://git-scm.com/downloads and install it).
+- Step 2: Once you have installed git you can clone this project using the command below:
+  ```
+  https://github.com/ibugithub/Project-SpaceX
+  ```
+- Step 3: Once you have cloned this repo navigate to the folder that contains
+  the repository.
+- Step 4: If you want to watch the html file open it with your favorite web browser(This project MUST be opened from VS Code for full functionality).
+- Step 5: If you want to edit this project open it with your favorite text editor.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running cloning this repo `https://github.com/ibugithub/Project-SpaceX`.
 
 ### Prerequisites
-In order to run this project you need:
-<p> A Text Editor</p>
-<p> A Browser </p>
+
+There are no known prerequisites to run this project.
+If you encounter any issues trying to run it, please feel free to
+[open a ticket](https://github.com/ibugithub/Project-SpaceX/issues/25) to let me know and i will work on it to the best
+of my abilities
 
 ### Setup
+
 Clone this repository to your desired folder:
-Example commands:
-  
-  ```
-    cd my-folder 
-    git clone https://github.com/ibugithub/Book-Store
-    cd Book-Store
-  ```
 
+`https://github.com/ibugithub/Project-SpaceX`
 
-### Install
-Install this project with:
-  `npm install `
- <p>No special installation needed</p>
+or
 
+`https://github.com/ibugithub/Project-SpaceX` <-- _Only if you have [SSH keys configured](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) on your GitHub account_.
 
 ### Usage
-To run the project, execute the following command:
-`npm start`
 
+To run the project:
 
-### Run tests
-To run tests, run the following command:
-<p> No test available </p>
-<p>But you can inspect the project's webpages by the browser's developer mode </p>
+- Method 1:
 
+```sh
+  cd PATH_TO_CLONE
+  npm install
+  npm run build
+  npm start
+```
+
+Method 2:
+Open './dist/index.html' in your browser of choice
 
 ### Deployment
-You can deploy this project using:
-<p>Any Browser</p>
+
+You can deploy this project using [Render](https://space-travelers-hub-xahs.onrender.com)
+or a web-hosting platform of your choice.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
+<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
- **Ibrahim ibu**
-- GitHub: [Ibu's Github](https://github.com/ibugithub)
-- Twitter: [Ibu's Twitter](https://twitter.com/mdibrahimibuu)
-- LinkedIn: [Ibu's LinkedIn](https://linkedin.com/in/ibuu)
+
+> 👤 **Gardimy Charles**
+- GitHub: [@Gardimy](https://github.com/Gardimy)
+- Twitter: [@gardyelontiga45](https://twitter.com/gardyelontiga45)
+- LinkedIn: [Gardimy charles](https://www.linkedin.com/in/gardimy-charles)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors"></a>
- **Gardimy Charles**
-- GitHub: [Gardimy's github](https://github.com/Gardimy)
-- Twitter: [Gardimy's twitter](https://twitter.com/gardyelontiga45)
-- LinkedIn: [Gardimy's LinkedIn](https://www.linkedin.com/in/gardimy-charles-40b795212/)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **[Ui Structure by react]**
-- [ ] **[Interactive website]**
+
+- Use store, actions and reducers in React.
+- Connect React and Redux.
+- Update Circle percent when a user add a book
+
+- [ ] **Updates will be made shortly to make the page interactive**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
+<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
+
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](../../issues/).
+
+Feel free to check the [issues page](https://github.com/ibugithub/Project-SpaceX/issues/25).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
+<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
-If you like this project please try to contribute or rate it or put a comment
+
+If you like this project please give me a start and share my portfolio to recruters!
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
+<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-I would like to thank to my coding partners.
 
+I would like to thank to the Microverse team for teching me this tool.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FAQ (optional) -->
 
+<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
-This project is [MIT](LICENSE.md) licensed.
+
+This project is [MIT](./LICENSE) licensed.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
