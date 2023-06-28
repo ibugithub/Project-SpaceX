@@ -11,7 +11,7 @@ function Missions() {
     axios.get('https://api.spacexdata.com/v3/missions')
       .then((res) => {
         setData(res.data);
-        dispatch(storeMissions(res.data)); // Fixed the usage of storeMissions here
+        dispatch(storeMissions(res.data));
       });
   }, [dispatch]);
 
@@ -31,7 +31,7 @@ function Missions() {
               <tr key={mission.mission_id}>
                 <td>{mission.mission_name}</td>
                 <td>{mission.description}</td>
-                <td>{mission.mission_id}</td>
+                <button type="button">Not a Member</button>
               </tr>
             ))}
           </tbody>
