@@ -9,10 +9,12 @@ function Missions() {
   const missions = useSelector((state) => state.missions);
 
   useEffect(() => {
-    axios.get('https://api.spacexdata.com/v3/missions').then((res) => {
-      dispatch(storeMissions(res.data));
-    });
-  }, [dispatch]);
+    if (missions.length === 0) {
+      axios.get('https://api.spacexdata.com/v3/missions').then((res) => {
+        dispatch(storeMissions(res.data));
+      });
+    }
+  }, [dispatch, missions.length]);
 
   const handleJoinMission = (missionId) => {
     dispatch(joinMission(missionId));
@@ -31,7 +33,7 @@ function Missions() {
       );
     }
     return (
-      <button type="button" onClick={() => handleJoinMission(mission.mission_id)}>
+      <button className="join" type="button" onClick={() => handleJoinMission(mission.mission_id)}>
         Join Mission
       </button>
     );
@@ -55,8 +57,15 @@ function Missions() {
                 <td className="name">{mission.mission_name}</td>
                 <td>{mission.description}</td>
                 <td className="btn">
-                  {mission.reserved ? <button type="button" className="active-member-btn">Active Member</button>
-                    : <button type="button" className="not-member-btn">NOT A MEMBER</button>}
+                  {mission.reserved ? (
+                    <button type="button" className="active-member-btn">
+                      Active Member
+                    </button>
+                  ) : (
+                    <button type="button" className="not-member-btn">
+                      NOT A MEMBER
+                    </button>
+                  )}
                 </td>
                 <td>{renderButton(mission)}</td>
               </tr>
