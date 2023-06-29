@@ -9,10 +9,12 @@ function Missions() {
   const missions = useSelector((state) => state.missions);
 
   useEffect(() => {
-    axios.get('https://api.spacexdata.com/v3/missions').then((res) => {
-      dispatch(storeMissions(res.data));
-    });
-  }, [dispatch]);
+    if (missions.length === 0) {
+      axios.get('https://api.spacexdata.com/v3/missions').then((res) => {
+        dispatch(storeMissions(res.data));
+      });
+    }
+  }, [dispatch, missions.length]);
 
   const handleJoinMission = (missionId) => {
     dispatch(joinMission(missionId));
