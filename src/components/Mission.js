@@ -55,8 +55,15 @@ function Missions() {
                 <td className="name">{mission.mission_name}</td>
                 <td>{mission.description}</td>
                 <td className="btn">
-                  {mission.reserved ? <button type="button" className="active-member-btn">Active Member</button>
-                    : <button type="button" className="not-member-btn">NOT A MEMBER</button>}
+                  {mission.reserved ? (
+                    <button type="button" className="active-member-btn">
+                      Active Member
+                    </button>
+                  ) : (
+                    <button type="button" className="not-member-btn">
+                      NOT A MEMBER
+                    </button>
+                  )}
                 </td>
                 <td>{renderButton(mission)}</td>
               </tr>
