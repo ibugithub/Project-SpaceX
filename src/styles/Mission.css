@@ -12,6 +12,19 @@
   margin-bottom: 20px;
 }
 
+.leave {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+.active-member-btn {
+  background-color: rgb(0, 81, 255);
+  color: white;
+  border: none;
+  padding: 1px 12px;
+}
+
 .tablechild {
   margin: 0 auto;
 }
@@ -70,7 +83,6 @@ td button .btn {
   cursor: pointer;
   white-space: nowrap;
   border: none;
-  border-style: ridge;
 }
 
 td button:not(:last-child) {

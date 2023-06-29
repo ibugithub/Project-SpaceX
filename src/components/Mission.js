@@ -25,7 +25,7 @@ function Missions() {
   const renderButton = (mission) => {
     if (mission.reserved) {
       return (
-        <button type="button" onClick={() => handleLeaveMission(mission.mission_id)}>
+        <button className="leave" type="button" onClick={() => handleLeaveMission(mission.mission_id)}>
           Leave Mission
         </button>
       );
@@ -55,7 +55,7 @@ function Missions() {
                 <td className="name">{mission.mission_name}</td>
                 <td>{mission.description}</td>
                 <td className="btn">
-                  {mission.reserved ? <button type="button" className="active-member-btn">ACTIVE MEMBER</button>
+                  {mission.reserved ? <button type="button" className="active-member-btn">Active Member</button>
                     : <button type="button" className="not-member-btn">NOT A MEMBER</button>}
                 </td>
                 <td>{renderButton(mission)}</td>
