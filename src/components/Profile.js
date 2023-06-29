@@ -1,5 +1,10 @@
 import React from 'react';
+import ReservedRockets from './ReservedRockets';
 
-const Missions = () => <h1>Welcome to the Profile!</h1>;
+const Profile = () => (
+  <>
+    <ReservedRockets />
+  </>
+);
 
-export default Missions;
+export default Profile;
