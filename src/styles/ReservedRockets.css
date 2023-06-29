@@ -1,7 +1,19 @@
-#reserve-rocket-container {
-  color: red;
+#reserved-rocket-container {
+  width: 40%;
 }
 
 #reserve-rocket-ul {
   padding-left: unset;
+  border: 1px solid #ddd;
+  border-bottom: unset;
+}
+
+#reserve-rocket-ul li {
+  margin-bottom: unset;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+#reserved-rocket-container h2 {
+  font-weight: 400;
 }

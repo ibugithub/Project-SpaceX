@@ -8,7 +8,7 @@ const ReservedRockets = () => {
   const reservedRockets = rockets.filter((rocket) => rocket.isReserved !== false);
   return (
     <div id="reserved-rocket-container">
-      <h3>My Rockets </h3>
+      <h2>My Rockets </h2>
       <ul id="reserve-rocket-ul">
         {
         reservedRockets.map((rocket) => (
