@@ -1,7 +1,7 @@
 .tablecontainer {
   width: 96%;
-  margin-left: 30px;
   margin-top: 25px;
+  margin: auto;
 }
 
 .line {
