@@ -16,6 +16,8 @@ li a {
   display: flex;
   padding-right: 30px;
   padding-left: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
@@ -41,7 +43,7 @@ li a {
 }
 
 .fontW400 {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .active {

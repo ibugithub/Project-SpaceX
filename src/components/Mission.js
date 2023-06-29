@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
-import { storeMissions } from '../redux/missions/MissionSlice';
+import { storeMissions, joinMission, leaveMission } from '../redux/missions/MissionSlice';
 import '../styles/Mission.css';
 
 function Missions() {
@@ -9,15 +9,36 @@ function Missions() {
   const missions = useSelector((state) => state.missions);
 
   useEffect(() => {
-    axios.get('https://api.spacexdata.com/v3/missions')
-      .then((res) => {
-        dispatch(storeMissions(res.data));
-      });
+    axios.get('https://api.spacexdata.com/v3/missions').then((res) => {
+      dispatch(storeMissions(res.data));
+    });
   }, [dispatch]);
+
+  const handleJoinMission = (missionId) => {
+    dispatch(joinMission(missionId));
+  };
+
+  const handleLeaveMission = (missionId) => {
+    dispatch(leaveMission(missionId));
+  };
+
+  const renderButton = (mission) => {
+    if (mission.reserved) {
+      return (
+        <button className="leave" type="button" onClick={() => handleLeaveMission(mission.mission_id)}>
+          Leave Mission
+        </button>
+      );
+    }
+    return (
+      <button type="button" onClick={() => handleJoinMission(mission.mission_id)}>
+        Join Mission
+      </button>
+    );
+  };
 
   return (
     <div className="tablecontainer">
-      <hr className="line" />
       <div className="tablechild">
         <table>
           <thead>
@@ -33,8 +54,11 @@ function Missions() {
               <tr key={mission.mission_id}>
                 <td className="name">{mission.mission_name}</td>
                 <td>{mission.description}</td>
-                <td className="btn"><button className="not-member-btn" type="button">NOT A MEMBER</button></td>
-                <td><button type="button">Join Mission</button></td>
+                <td className="btn">
+                  {mission.reserved ? <button type="button" className="active-member-btn">Active Member</button>
+                    : <button type="button" className="not-member-btn">NOT A MEMBER</button>}
+                </td>
+                <td>{renderButton(mission)}</td>
               </tr>
             ))}
           </tbody>
