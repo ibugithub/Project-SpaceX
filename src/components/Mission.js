@@ -31,7 +31,7 @@ function Missions() {
       );
     }
     return (
-      <button type="button" onClick={() => handleJoinMission(mission.mission_id)}>
+      <button className="join" type="button" onClick={() => handleJoinMission(mission.mission_id)}>
         Join Mission
       </button>
     );
