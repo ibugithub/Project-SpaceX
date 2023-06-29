@@ -16,6 +16,8 @@ li a {
   justify-content: space-between;
   padding-right: 30px;
   padding-left: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
 }
 
 .logo_title_container {
@@ -37,7 +39,7 @@ li a {
 }
 
 .fontW400 {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .active {

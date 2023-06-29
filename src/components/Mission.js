@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
-import { storeMissions } from '../redux/missions/MissionSlice';
+import { storeMissions, joinMission } from '../redux/missions/MissionSlice';
 import '../styles/Mission.css';
 
 function Missions() {
@@ -15,9 +15,12 @@ function Missions() {
       });
   }, [dispatch]);
 
+  const handleJoinMission = (missionId) => {
+    dispatch(joinMission(missionId));
+  };
+
   return (
     <div className="tablecontainer">
-      <hr className="line" />
       <div className="tablechild">
         <table>
           <thead>
@@ -33,8 +36,14 @@ function Missions() {
               <tr key={mission.mission_id}>
                 <td className="name">{mission.mission_name}</td>
                 <td>{mission.description}</td>
-                <td className="btn"><button className="not-member-btn" type="button">NOT A MEMBER</button></td>
-                <td><button type="button">Join Mission</button></td>
+                <td className="btn">
+                  <button className="not-member-btn" type="button">NOT A MEMBER</button>
+                </td>
+                <td>
+                  <button type="button" onClick={() => handleJoinMission(mission.mission_id)}>
+                    Join Mission
+                  </button>
+                </td>
               </tr>
             ))}
           </tbody>
