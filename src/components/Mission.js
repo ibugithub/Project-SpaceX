@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
-import { storeMissions, joinMission } from '../redux/missions/MissionSlice';
+import { storeMissions, joinMission, leaveMission } from '../redux/missions/MissionSlice';
 import '../styles/Mission.css';
 
 function Missions() {
@@ -9,14 +9,32 @@ function Missions() {
   const missions = useSelector((state) => state.missions);
 
   useEffect(() => {
-    axios.get('https://api.spacexdata.com/v3/missions')
-      .then((res) => {
-        dispatch(storeMissions(res.data));
-      });
+    axios.get('https://api.spacexdata.com/v3/missions').then((res) => {
+      dispatch(storeMissions(res.data));
+    });
   }, [dispatch]);
 
   const handleJoinMission = (missionId) => {
     dispatch(joinMission(missionId));
+  };
+
+  const handleLeaveMission = (missionId) => {
+    dispatch(leaveMission(missionId));
+  };
+
+  const renderButton = (mission) => {
+    if (mission.reserved) {
+      return (
+        <button type="button" onClick={() => handleLeaveMission(mission.mission_id)}>
+          Leave Mission
+        </button>
+      );
+    }
+    return (
+      <button type="button" onClick={() => handleJoinMission(mission.mission_id)}>
+        Join Mission
+      </button>
+    );
   };
 
   return (
@@ -37,13 +55,10 @@ function Missions() {
                 <td className="name">{mission.mission_name}</td>
                 <td>{mission.description}</td>
                 <td className="btn">
-                  <button className="not-member-btn" type="button">NOT A MEMBER</button>
+                  {mission.reserved ? <button type="button" className="active-member-btn">ACTIVE MEMBER</button>
+                    : <button type="button" className="not-member-btn">NOT A MEMBER</button>}
                 </td>
-                <td>
-                  <button type="button" onClick={() => handleJoinMission(mission.mission_id)}>
-                    Join Mission
-                  </button>
-                </td>
+                <td>{renderButton(mission)}</td>
               </tr>
             ))}
           </tbody>
