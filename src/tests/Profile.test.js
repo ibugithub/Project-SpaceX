@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { useSelector } from 'react-redux';
-import Profile from '../components/Profile'; // Update the file path to Profile.js
+import Profile from '../components/Profile';
 
 jest.mock('react-redux', () => ({
   useSelector: jest.fn(),
