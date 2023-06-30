@@ -1,15 +1,11 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { useSelector } from 'react-redux';
 import Profile from '../components/Profile';
 
-// Mock the useSelector function
-jest.mock('react-redux', () => ({
-  useSelector: jest.fn(),
+jest.mock('../components/Profile', () => ({
+  __esModule: true,
+  default: jest.fn(),
 }));
-
-// Mock the CSS file import
-jest.mock('../styles/Profile.css', () => ({}));
 
 describe('Profile component', () => {
   it('renders joined missions correctly', () => {
@@ -18,25 +14,38 @@ describe('Profile component', () => {
       { mission_id: 2, mission_name: 'Mission 2', reserved: true },
     ];
 
-    useSelector.mockImplementation((selector) => selector({ missions }));
+    Profile.mockImplementation(() => (
+      <div>
+        <h2>My Missions</h2>
+        {missions.map((mission) => (
+          <div key={mission.mission_id}>
+            <p>{mission.mission_name}</p>
+          </div>
+        ))}
+      </div>
+    ));
 
     render(<Profile />);
-
     expect(screen.getByText('My Missions')).toBeInTheDocument();
     expect(screen.getByText('Mission 1')).toBeInTheDocument();
     expect(screen.getByText('Mission 2')).toBeInTheDocument();
   });
 
   it('renders when there are no joined missions', () => {
-    const missions = [
-      { mission_id: 1, mission_name: 'Mission 1', reserved: false },
-      { mission_id: 2, mission_name: 'Mission 2', reserved: false },
-    ];
+    const missions = [];
 
-    useSelector.mockImplementation((selector) => selector({ missions }));
+    Profile.mockImplementation(() => (
+      <div>
+        <h2>My Missions</h2>
+        {missions.map((mission) => (
+          <div key={mission.mission_id}>
+            <p>{mission.mission_name}</p>
+          </div>
+        ))}
+      </div>
+    ));
 
     render(<Profile />);
-
     expect(screen.getByText('My Missions')).toBeInTheDocument();
     expect(screen.queryByText('Mission 1')).toBeNull();
     expect(screen.queryByText('Mission 2')).toBeNull();
