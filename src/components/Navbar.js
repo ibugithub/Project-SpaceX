@@ -8,7 +8,7 @@ const Navbar = () => {
   const navBar = useRef(null);
   const navContainer = useRef(null);
   const separator = useRef(null);
-  const [isToggled, setIsToggled] = useState(false);
+  const [isToggled, setIsToggled] = useState(true);
   const handleClick = () => {
     setIsToggled(!isToggled);
     if (isToggled) {
@@ -22,28 +22,28 @@ const Navbar = () => {
     }
   };
   return (
-    <nav id="nav" ref={navContainer}>
+    <nav id="nav" ref={navContainer} data-testid="nav-container">
 
       <div className="logo_title_container">
-        <img className="logo" src={saturn} alt="" />
+        <img className="logo" src={saturn} alt="Saturn Logo" />
         <h3 className="fontW400 margin0">Space Travelers&apos; Hub</h3>
       </div>
 
       <div>
 
         <div className="mobileShow">
-          <button id="menuImg" type="button" onClick={handleClick}>
+          <button name="menu" id="menuImg" type="button" onClick={handleClick}>
             <img id="menu-img" src={menu} alt="This is a menu logo" />
           </button>
         </div>
 
-        <ul className="desktopShow NavBar_ul" ref={navBar}>
+        <ul className="desktopShow NavBar_ul" data-testid="navBar" ref={navBar}>
           <li>
             <NavLink className={({ isActive }) => (isActive ? 'active' : ' ')} to="/"> Rockets</NavLink>
           </li>
           <li><NavLink to="/Missions">Missions</NavLink></li>
           <li className="profileLi">
-            <div ref={separator} className="spearator" />
+            <div ref={separator} className="spearator" data-testid="separator" />
             <NavLink className={({ isActive }) => (isActive ? 'active' : ' ')} to="/Profile"> Profile </NavLink>
           </li>
         </ul>
