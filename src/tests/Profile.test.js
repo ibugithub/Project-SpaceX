@@ -28,13 +28,13 @@ describe('Profile component', () => {
       { mission_id: 1, mission_name: 'Mission 1', reserved: false },
       { mission_id: 2, mission_name: 'Mission 2', reserved: false },
     ];
-  
+
     useSelector.mockImplementation((selector) => selector({ missions }));
-  
+
     const { getByText, queryByText } = render(<Profile />);
-  
+
     expect(getByText('My Missions')).toBeInTheDocument();
     expect(queryByText('Mission 1')).toBeNull();
     expect(queryByText('Mission 2')).toBeNull();
-  });  
+  });
 });
